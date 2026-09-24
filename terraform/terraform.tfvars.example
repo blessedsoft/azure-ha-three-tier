@@ -1,0 +1,20 @@
+location     = "eastus"
+environment  = "dev"
+project_name = "ha-three-tier"
+
+# Required: use the contents of your public key.
+ssh_public_key = "ssh-rsa AAAA..."
+
+web_vm_size = "Standard_B1s"
+app_vm_size = "Standard_B1s"
+
+web_instance_count = 2
+app_instance_count = 2
+
+postgres_sku_name   = "B_Standard_B1ms"
+postgres_storage_mb = 32768
+
+# Optional: configure HTTPS on Application Gateway with a PFX certificate.
+# application_gateway_certificate_name     = "public-cert"
+# application_gateway_certificate_path     = "./certs/public.pfx"
+# application_gateway_certificate_password = "change-me"
